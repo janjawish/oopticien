@@ -1,0 +1,5 @@
+1:"$Sreact.fragment"
+2:I[71879,["/_next/static/chunks/296b7b3b49b5681b.js","/_next/static/chunks/722bca15f44cd58d.js"],"OutletBoundary"]
+3:"$Sreact.suspense"
+0:{"buildId":"YGwdhnGEsIOz10QbqKw0U","rsc":["$","$1","c",{"children":[["$","section",null,{"className":"not-found shell","children":[["$","p",null,{"className":"section-index","children":"Erreur 404"}],["$","h1",null,{"children":["Cette page",["$","br",null,{}],["$","em",null,{"children":"n’existe plus."}]]}],["$","p",null,{"children":"La boutique, elle, est toujours au 20 rue Porte aux Saints."}],["$","a",null,{"className":"arrow-link","href":"/","children":[["$","span",null,{"children":"Revenir à l’accueil"}],["$","span",null,{"aria-hidden":"true","children":"↗"}]]}]]}],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"loading":null,"isPartial":false}
+4:null

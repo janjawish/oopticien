@@ -1,0 +1,19 @@
+# dependencies
+node_modules/
+
+# Next.js build outputs
+.next/
+.next-stale-*/
+out/
+
+# local verification artifacts
+artifacts/
+tsconfig.tsbuildinfo
+
+# environment and editor files
+.env*
+!.env.example
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
