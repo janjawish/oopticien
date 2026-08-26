@@ -16,5 +16,3 @@ pnpm check
 ```
 
 Le build produit un export statique dans `out/`, déployé sur GitHub Pages par le workflow `deploy-pages.yml`.
-
-## Contenu
