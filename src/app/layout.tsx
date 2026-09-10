@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import { DM_Sans, Fraunces } from "next/font/google";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
@@ -63,6 +64,9 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <Header />
         <main id="main">{children}</main>
         <Footer />
+        <Script id="developer-credit" strategy="lazyOnload">
+          {'console.info("Site developed by JanJawish — janjawish.fr");'}
+        </Script>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, "\\u003c") }} />
       </body>
     </html>

@@ -32,6 +32,9 @@ export function Footer() {
       <div className="shell site-footer__bottom">
         <p>© {new Date().getFullYear()} O’Opticien</p>
         <div><a href="/mentions-legales">Mentions légales</a><a href="/confidentialite">Confidentialité</a></div>
+        <p className="site-footer__credit">
+          Site par <a href="https://janjawish.fr" target="_blank" rel="noopener noreferrer">JanJawish <span aria-hidden="true">↗</span></a>
+        </p>
       </div>
     </footer>
   );

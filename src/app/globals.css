@@ -155,6 +155,16 @@ em { font-family: var(--font-serif), Georgia, serif; font-weight: 400; }
 .site-footer__bottom { display: flex; justify-content: space-between; padding-top: 25px; border-top: 1px solid rgba(255,255,255,.13); color: #808983; font-size: 10px; text-transform: uppercase; letter-spacing: .08em; }
 .site-footer__bottom p { margin: 0; }
 .site-footer__bottom div { display: flex; gap: 30px; }
+.site-footer__credit { font-size: 11px; text-transform: none; letter-spacing: .02em; white-space: nowrap; }
+.site-footer__credit a { display: inline-flex; align-items: baseline; gap: 4px; transition: color .25s ease; }
+.site-footer__credit a:hover, .site-footer__credit a:focus-visible { color: #dfe3df; }
+.site-footer__credit a:focus-visible { outline-color: currentColor; }
+.site-footer__credit span { display: inline-block; transition: transform .25s ease; }
+.site-footer__credit a:hover span, .site-footer__credit a:focus-visible span { transform: translate(2px, -2px); }
+@media (prefers-reduced-motion: reduce) {
+  .site-footer__credit a, .site-footer__credit span { transition: none; }
+  .site-footer__credit a:hover span, .site-footer__credit a:focus-visible span { transform: none; }
+}
 
 /* Page intros */
 .page-intro { padding: 210px 0 130px; background: var(--ivory); }
