@@ -1,0 +1,291 @@
+/* BASE + RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  scroll-behavior: smooth;
+  font-family: 'Lato', sans-serif;
+  background-color: #fafafa;
+  color: #121212;
+  line-height: 1.7;
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  color: #121212;
+}
+
+/* HEADER COHÉRENT AVEC style.css */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5%;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 40px;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #121212;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #b1985f;
+}
+
+/* MENU BURGER */
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.burger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #121212;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* CONTENU PAGE MENTIONS */
+main.mentions {
+  padding: 140px 5% 60px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+main.mentions h1 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+main.mentions section {
+  margin-bottom: 40px;
+  transition: all 0.6s ease;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+main.mentions section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+main.mentions h2 {
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+main.mentions h2::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background: #007273;
+  bottom: -6px;
+  left: 0;
+}
+
+main.mentions p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* FOOTER COHÉRENT */
+footer {
+  background-color: #111;
+  color: #f0f0f0;
+  padding: 2rem 1rem 1rem;
+  margin-top: 60px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-col {
+  flex: 1 1 250px;
+  margin: 1rem;
+}
+
+.footer-col h3, .footer-col h4 {
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-col ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #333;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* RESPONSIVE NAVIGATION */
+@media (max-width: 768px) {
+  nav {
+    position: absolute;
+    top: 60px;
+    right: 5%;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 20px;
+    display: none;
+    flex-direction: column;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  .burger {
+    display: flex;
+  }
+}
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #333;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+.footer-links-legaux a {
+  color: #ccc;
+  font-size: 0.9rem;
+  margin: 0 8px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links-legaux a:hover {
+  color: #fff;
+}
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: #121212;
+}
+
+/* MENTIONS LÉGALES */
+.mentions-container {
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.mentions-container h1 {
+  font-size: 2em;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.mentions-container h2 {
+  font-size: 1.3em;
+  margin-top: 30px;
+  margin-bottom: 12px;
+  color: #121212;
+  border-left: 4px solid #b1985f;
+  padding-left: 10px;
+}
+
+.mentions-container p {
+  font-size: 1rem;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.mentions-container strong {
+  font-weight: 700;
+  color: #000;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .mentions-container {
+    padding: 25px 20px;
+  }
+
+  .mentions-container h1 {
+    font-size: 1.6em;
+  }
+}
+
+
+.dev-link {
+  color: #b1985f;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s, text-decoration 0.3s;
+}
+
+.dev-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.external-link-icon {
+  font-size: 0.75em;
+  margin-left: 4px;
+  vertical-align: top;
+}
